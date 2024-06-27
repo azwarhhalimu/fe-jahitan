@@ -1,5 +1,5 @@
 import axios from "axios";
-export const baseUrl = "http://localhost:2000/";
+export const baseUrl = "http://103.127.97.183:2000/";
 const axiosAdmin = axios.create({
   baseURL: baseUrl + "admin/",
   withCredentials: true,
