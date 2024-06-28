@@ -20,10 +20,10 @@ axiosAdmin.interceptors.request.use((config) => {
 axiosAdmin.interceptors.response.use((config) => {
   if (config.data.status == "expire") {
     alert("Token Expire");
-    // window.location.href = "/login.html";
+    window.location.href = "/login.html";
   } else if (config.data.status == "forbidden") {
     alert("Akses fobidden. silahkan login lagi");
-    // window.location.href = "/login.html";
+    window.location.href = "/login.html";
   }
   return config;
 });
