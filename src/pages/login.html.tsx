@@ -23,6 +23,7 @@ const Login: React.FC = () => {
                 alert('Login sukses');
                 window.localStorage.setItem('i_nama', respon.data.data.nama)
                 window.localStorage.setItem('i_username', respon.data.data.username)
+                window.localStorage.setItem('i_token', respon.data.data.data_login)
                 route.push('/')
 
             }

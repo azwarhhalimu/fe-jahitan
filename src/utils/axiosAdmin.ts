@@ -9,6 +9,14 @@ const axiosAdmin = axios.create({
     "Content-Type": "application/json",
   },
 });
+axiosAdmin.interceptors.request.use((config) => {
+  const c = window.localStorage.getItem("i_token");
+  if (c !== null) {
+    config.headers.Authorization = "Bearer " + c;
+  }
+
+  return config;
+});
 axiosAdmin.interceptors.response.use((config) => {
   if (config.data.status == "expire") {
     alert("Token Expire");
