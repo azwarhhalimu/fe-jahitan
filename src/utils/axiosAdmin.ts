@@ -1,8 +1,13 @@
 import axios from "axios";
 export const baseUrl = "https://jahitan.azwarbuton.biz.id/";
+// export const baseUrl = "http://localhost:2000/";
 const axiosAdmin = axios.create({
   baseURL: baseUrl + "admin/",
   withCredentials: true,
+  headers: {
+    "Access-Control-Allow-Origin": "*",
+    "Content-Type": "application/json",
+  },
 });
 axiosAdmin.interceptors.response.use((config) => {
   if (config.data.status == "expire") {
