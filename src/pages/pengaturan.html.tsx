@@ -3,6 +3,7 @@ import React from "react";
 const Pengaturan: React.FC = () => {
     return (<>
         <div>
+
             <section className="content-header">
                 <div className="container-fluid">
                     <div className="row mb-2">
