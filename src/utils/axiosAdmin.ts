@@ -1,6 +1,6 @@
 import axios from "axios";
-export const baseUrl = "https://jahitan.azwarbuton.biz.id/";
-// export const baseUrl = "http://localhost:2000/";
+// export const baseUrl = "https://jahitan.azwarbuton.biz.id/";
+export const baseUrl = process.env.NEXT_PUBLIC_URL;
 const axiosAdmin = axios.create({
   baseURL: baseUrl + "admin/",
   withCredentials: true,
