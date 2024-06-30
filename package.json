@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "production": "tsc src/index.ts && node dist/index.js",
     "lint": "next lint"
   },
   "dependencies": {
