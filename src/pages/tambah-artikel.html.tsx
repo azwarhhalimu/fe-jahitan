@@ -7,6 +7,7 @@ import Editor from 'react-simple-wysiwyg';
 import axiosAdmin from "@/utils/axiosAdmin";
 import { AxiosResponse } from "axios";
 import { useRouter } from "next/router";
+import loadingModal from "@/state/loadingModal";
 const TambahArtikel: React.FC = () => {
     const route = useRouter();
 
@@ -38,6 +39,7 @@ const TambahArtikel: React.FC = () => {
         formdata.append('x', x);
         formdata.append('y', y);
         if (form.checkValidity() !== false) {
+
             event.stopPropagation();
             axiosAdmin.post('artikel', formdata, {
                 headers: {
@@ -54,8 +56,10 @@ const TambahArtikel: React.FC = () => {
 
         setValidated(true);
     };
+
     return (<>
         <div>
+
             <section className="content-header">
                 <div className="container-fluid">
                     <div className="row mb-2">
