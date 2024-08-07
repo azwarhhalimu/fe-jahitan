@@ -3,7 +3,7 @@ import axios from "axios";
 export const baseUrl = process.env.NEXT_PUBLIC_URL;
 const axiosAdmin = axios.create({
   baseURL: baseUrl + "admin/",
-  withCredentials: true,
+  // withCredentials: true,
   headers: {
     "Access-Control-Allow-Origin": "*",
     "Content-Type": "application/json",
