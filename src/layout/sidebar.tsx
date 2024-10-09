@@ -2,7 +2,7 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { CloseButton } from "react-bootstrap";
-import { Box, Compass, Cpu, Dash, Explicit, Newspaper, Person, Xbox } from "react-bootstrap-icons";
+import { Box, Compass, Dash, Explicit, Newspaper, Person, Xbox } from "react-bootstrap-icons";
 type itMenu = {
     label: string;
     url: string;
@@ -57,7 +57,7 @@ const Sidebar: React.FC = () => {
     return (<>
         <aside style={{ position: "fixed" }} className="main-sidebar sidebar-dark-primary elevation-4">
             {/* Brand Logo */}
-            <a href="index3.html" className="brand-link">
+            <a href="/" className="brand-link">
                 <img src="/img/AdminLTELogo.png" alt="AdminLTE Logo" className="brand-image img-circle elevation-3" style={{ opacity: '.8' }} />
                 <span className="brand-text font-weight-light">Admin</span>
             </a>

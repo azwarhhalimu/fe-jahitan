@@ -80,7 +80,7 @@ const Berita: React.FC = () => {
                                     <tr>
                                         <td>{index + 1}</td>
                                         <td>
-                                            <img style={{ width: "100px" }} src={baseUrl + "public/artikel/200/" + list.id_artikel + ".jpg"} />
+                                            <img style={{ width: "100px" }} src={baseUrl + "public/artikel/300/" + list.id_artikel + ".jpg"} />
                                         </td>
                                         <td>{list.judul}</td>
                                         <td>{convertTanggalIso(list.timestamp)}</td>
